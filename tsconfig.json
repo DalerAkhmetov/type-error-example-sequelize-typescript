@@ -19,7 +19,7 @@
     //"noEmit": true,
     "target": "esnext",
     "module": "commonjs",
-    "outDir": "lib",
+    "outDir": "lib-ts",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "removeComments": true,

@@ -1,5 +1,6 @@
 import {Sequelize} from 'sequelize-typescript';
 import Example from './models/Example';
+import assert from 'assert';
 
 const sequelize =  new Sequelize({
     url: 'sqlite::memory:',
@@ -29,10 +30,10 @@ async function run() {
     });
 
     if (example) {
-        console.log(example.publishedAt instanceof Date);
-    } else {
-        console.log('no example');
+        assert(example.publishedAt instanceof Date);
     }
+
+    console.log('type is correct');
 
     await sequelize.close();
 }

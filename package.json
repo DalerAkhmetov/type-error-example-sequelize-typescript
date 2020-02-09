@@ -10,15 +10,24 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel --root-mode upward src --out-dir lib --source-maps --extensions .js,.jsx,.ts --delete-dir-on-start --no-comments"
+    "build": "babel --root-mode upward src --out-dir lib --source-maps --extensions .js,.jsx,.ts --delete-dir-on-start --no-comments",
+    "build:example": "yarn build && tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-proposal-export-default-from": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-typescript": "^7.8.3",
     "@types/bluebird": "^3.5.29",
     "@types/node": "^13.7.0",
     "@types/validator": "10.11.3",
+    "babel-plugin-transform-typescript-metadata": "^0.2.2",
     "typescript": "^3.7.5"
   },
   "dependencies": {
