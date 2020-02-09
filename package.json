@@ -1,0 +1,30 @@
+{
+  "name": "example-sequelize-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "module": "src/index.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --root-mode upward src --out-dir lib --source-maps --extensions .js,.jsx,.ts --delete-dir-on-start --no-comments"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bluebird": "^3.5.29",
+    "@types/node": "^13.7.0",
+    "@types/validator": "10.11.3",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "4",
+    "sequelize-typescript": "0.6",
+    "sqlite3": "^4.1.1"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "strict": true,
+    "pretty": true,
+    "jsx": "react",
+    "suppressImplicitAnyIndexErrors": true,
+
+    //"noEmit": true,
+    "target": "esnext",
+    "module": "commonjs",
+    "outDir": "lib",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "removeComments": true,
+
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    "rootDir": "./src",
+    "baseUrl": ".",
+
+
+    "declaration": true
+  },
+
+  "exclude": ["node_modules"],
+  "include": ["./src"]
+}
