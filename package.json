@@ -31,6 +31,7 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
+    "mysql2": "^2.1.0",
     "reflect-metadata": "^0.1.13",
     "sequelize": "4",
     "sequelize-typescript": "0.6",

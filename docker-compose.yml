@@ -1,0 +1,23 @@
+version: '3.2'
+services:
+  mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      - TZ=Europe/Moscow
+      - MYSQL_ROOT_PASSWORD=123
+      - MYSQL_USER=example
+      - MYSQL_PASSWORD=123
+      - MYSQL_DATABASE=example
+
+    healthcheck:
+      test: "exit 0"
+
+  example:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    environment:
+      - TZ=Europe/Moscow
+    depends_on:
+      - mysql

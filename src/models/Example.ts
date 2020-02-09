@@ -1,6 +1,8 @@
 import {Table, Model, Column, DataType, AllowNull, Unique, BelongsTo, ForeignKey} from 'sequelize-typescript';
+import Fix from "../Fix";
 
 @Table
+@Fix
 export default class Example extends Model<Example> {
     @AllowNull(false)
     @Column
